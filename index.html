@@ -1,9 +1,513 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My GitHub Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Raj Kapadia is a software engineer who specializes in building exceptional digital experiences."
+    />
+    <meta name="og:image" content="assets/og-image.png" />
+    <meta name="og:title" content="Raj Kapadia" />
+    <meta name="og:url" content="https://rajkapadia247.github.io" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="og:description"
+      content="Raj Kapadia is a software engineer who specializes in building exceptional digital experiences."
+    />
+    <meta name="theme-color" content="#0a192f" />
+    <title>Raj Kapadia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
-    <p>Welcome to my GitHub Page.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="nav-logo">
+          <a href="#home">RK</a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a
+              href="#"
+              class="nav-link resume-btn resume-btn-selector"
+              id="resumeBtn"
+              >Resume</a
+            >
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-greeting">Hi, my name is</p>
+          <h1 class="hero-title">Raj Kapadia.</h1>
+          <h2 class="hero-subtitle">I build things for the web.</h2>
+          <p class="hero-description">
+            I'm a full stack developer specializing in building exceptional
+            digital experiences. Currently, I'm focused on building accessible,
+            human-centered products.
+          </p>
+          <div class="hero-buttons">
+            <a href="#work" class="btn btn-primary">View My Work</a>
+            <a href="#" class="btn btn-primary resume-btn-selector">Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Hello! I'm Raj, a passionate full-stack software engineer who
+              enjoys creating things that live on the internet. My journey into
+              technology began in 2013 when I built my first interactive website
+              for a local community project — seeing people use something I
+              created sparked my passion for coding and problem solving!
+            </p>
+            <p>
+              Fast-forward to today, and I've had the privilege of building
+              software for
+              <a href="#" class="inline-link">top American banks</a>,
+              <a href="#" class="inline-link">Fortune 50 insurance providers</a
+              >, and <a href="#" class="inline-link">global enterprises</a>. My
+              main focus these days is building accessible, inclusive products
+              and digital experiences that serve 100,000+ users daily.
+            </p>
+            <p>
+              I specialize in the JavaScript ecosystem with expertise in React,
+              Redux, Node.js, and GraphQL. I'm passionate about performance
+              optimization, having improved application performance by up to 30%
+              in high volume platforms.
+            </p>
+            <p>Here are a few technologies I've been working with recently:</p>
+            <ul class="skills-list">
+              <li>JavaScript (ES6+)</li>
+              <li>React & Redux</li>
+              <li>Node.js & GraphQL</li>
+              <li>TypeScript</li>
+              <li>Python</li>
+              <li>Java</li>
+            </ul>
+          </div>
+          <div class="about-image">
+            <div class="about-avatar">
+              <img
+                src="https://avatars.githubusercontent.com/u/47295446?v=4"
+                alt="Raj Kapadia Avatar"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Where I've Worked</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Senior Associate</h3>
+                <span class="company">Cognizant Technologies</span>
+                <span class="period">Dec 2023 - Present</span>
+              </div>
+              <ul>
+                <li>
+                  Headed front-end development for a high-volume trading
+                  platform serving a top American bank, implementing robust
+                  solutions for high-frequency trading requirements
+                </li>
+                <li>
+                  Improved application performance by up to 30% through
+                  optimization techniques and best practices implementation
+                </li>
+                <li>
+                  Collaborated with cross-functional teams including UX/UI
+                  designers, back-end developers, and accessibility experts to
+                  deliver seamless interfaces
+                </li>
+                <li>
+                  Led code reviews and mentored junior developers, fostering a
+                  collaborative team environment ensuring high code quality
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Associate</h3>
+                <span class="company">Cognizant Technologies</span>
+                <span class="period">Aug 2021 - Dec 2023</span>
+              </div>
+              <ul>
+                <li>
+                  Developed authentication and login assistance modules serving
+                  100,000+ users daily for a top American bank
+                </li>
+                <li>
+                  Built enterprise-grade applications ensuring seamless
+                  functionality across different devices and browsers
+                </li>
+                <li>
+                  Wrote high-quality, scalable, testable, and maintainable code
+                  following industry best practices
+                </li>
+                <li>
+                  Conducted regular client demos and participated in agile
+                  development processes with cross-functional teams
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Senior Systems Engineer</h3>
+                <span class="company">Infosys Ltd</span>
+                <span class="period">Sept 2020 - Aug 2021</span>
+              </div>
+              <ul>
+                <li>
+                  Developed flagship agent-facing applications for a Fortune 50
+                  American insurance provider, implementing property line of
+                  business for homeowners, renters, and condo insurance
+                </li>
+                <li>
+                  Customized rollout for all 50 U.S. states, adapting to varied
+                  regulations and user requirements while maintaining 90%+ unit
+                  test coverage
+                </li>
+                <li>
+                  Built high-performance front-end layers and reusable
+                  components using React, JavaScript, and GraphQL
+                </li>
+                <li>
+                  Implemented Test-Driven Development practices and learned
+                  industry best practices, achieving top 5 performance among 621
+                  trainees
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <!-- <section id="work" class="work">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Some Things I've Built</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card featured">
+            <div class="project-content">
+              <p class="project-overline">Featured Project</p>
+              <h3 class="project-title">Hotel Booking System</h3>
+              <div class="project-description">
+                <p>
+                  A comprehensive hotel booking platform with real-time
+                  availability management, secure payment processing, and an
+                  intuitive user interface. Features include room search,
+                  booking management, admin dashboard, and integration with
+                  payment gateways for seamless transactions.
+                </p>
+              </div>
+              <ul class="project-tech-list">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Express</li>
+                <li>Stripe API</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/600x400/0a192f/64ffda?text=Hotel+Booking"
+                alt="Hotel Booking System"
+              />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <p class="project-overline">Collaboration Tool</p>
+              <h3 class="project-title">Real-Time Collaboration Whiteboard</h3>
+              <div class="project-description">
+                <p>
+                  An interactive whiteboard application enabling real-time
+                  collaboration for teams. Features include drawing tools, text
+                  annotations, shape creation, and live synchronization across
+                  multiple users. Perfect for remote meetings, brainstorming
+                  sessions, and educational purposes.
+                </p>
+              </div>
+              <ul class="project-tech-list">
+                <li>React</li>
+                <li>Socket.io</li>
+                <li>Canvas API</li>
+                <li>Node.js</li>
+                <li>WebRTC</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/600x400/0a192f/64ffda?text=Whiteboard"
+                alt="Real-Time Collaboration Whiteboard"
+              />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <p class="project-overline">Personal Project</p>
+              <h3 class="project-title">Contact Manager</h3>
+              <div class="project-description">
+                <p>
+                  A full-stack contact management application with user
+                  authentication, CRUD operations, and real-time updates.
+                  Features include contact categorization, search functionality,
+                  and responsive design for optimal user experience across all
+                  devices.
+                </p>
+              </div>
+              <ul class="project-tech-list">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Express</li>
+                <li>JWT</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/600x400/0a192f/64ffda?text=Contact+Manager"
+                alt="Contact Manager"
+              />
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <p class="project-overline">Finance App</p>
+              <h3 class="project-title">Personal Finance Tracker</h3>
+              <div class="project-description">
+                <p>
+                  A comprehensive personal finance management application that
+                  helps users track expenses, set budgets, and visualize
+                  spending patterns. Features include expense categorization,
+                  budget alerts, financial reports, and goal tracking to help
+                  users achieve their financial objectives.
+                </p>
+              </div>
+              <ul class="project-tech-list">
+                <li>React</li>
+                <li>Chart.js</li>
+                <li>Node.js</li>
+                <li>PostgreSQL</li>
+                <li>Express</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-image">
+              <img
+                src="https://via.placeholder.com/600x400/0a192f/64ffda?text=Finance+Tracker"
+                alt="Personal Finance Tracker"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What's Next?</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-form">
+            <h3>Get In Touch</h3>
+            <p>
+              I'm always interested in hearing about new opportunities and
+              exciting projects. Feel free to reach out and I'll get back as
+              soon as I can.
+            </p>
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/xvgqewgy"
+              method="POST"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="youremail@example.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Type your message here"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-links">
+            <a
+              href="https://github.com/rajkapadia247"
+              class="social-link"
+              aria-label="GitHub Profile"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/raj--kapadia"
+              class="social-link"
+              aria-label="LinkedIn Profile"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="mailto:rajkapadia247@gmail.com"
+              class="social-link"
+              aria-label="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <p>Designed & Built by Raj Kapadia</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
