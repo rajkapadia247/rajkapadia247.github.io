@@ -53,6 +53,9 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 50px;
 }
 
 .nav-logo a {
@@ -69,6 +72,7 @@ body {
   list-style: none;
   gap: 2rem;
   align-items: center;
+  font-family: var(--font-mono);
 }
 
 .nav-link {
@@ -76,6 +80,7 @@ body {
   text-decoration: none;
   font-weight: 400;
   font-size: 0.875rem;
+  font-family: var(--font-mono);
   transition: color 0.3s ease;
   position: relative;
   padding: 0.5rem 0;
@@ -105,6 +110,7 @@ body {
   border-radius: 4px;
   padding: 0.75rem 1rem !important;
   color: var(--green) !important;
+  font-family: var(--font-mono);
   transition: all 0.3s ease;
 }
 
@@ -114,6 +120,11 @@ body {
 
 .resume-btn::after {
   display: none;
+}
+
+.nav-number {
+  color: var(--green);
+  font-family: var(--font-mono);
 }
 
 .hamburger {
@@ -679,9 +690,12 @@ section {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .container,
-  .nav-container,
   .hero-container {
     padding: 0 100px;
+  }
+
+  .nav-container {
+    padding: 0 40px;
   }
 }
 
