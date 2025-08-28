@@ -1,6 +1,6 @@
 # Raj Kapadia - Portfolio
 
-My personal portfolio website showcasing my work as a Full Stack Developer.
+My personal portfolio website showcasing my work as a Full Stack Engineer.
 
 ## Live Demo
 

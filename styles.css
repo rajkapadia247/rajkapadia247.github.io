@@ -58,13 +58,45 @@ body {
   padding: 0 50px;
 }
 
+.logo-svg {
+  width: 42px;
+  height: 42px;
+  transition: transform 0.2s ease;
+  display: block;
+}
+
 .nav-logo a {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--green);
   text-decoration: none;
-  font-family: "Indie Flower", "SF Mono", "Fira Code", "Fira Mono",
-    "Roboto Mono", monospace;
+  display: inline-block;
+  transition: transform 0.2s ease;
+  position: relative;
+  line-height: 0;
+}
+
+/* subtle highlight behind logo on hover */
+.nav-logo a::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 8px;
+  background: transparent;
+  opacity: 0;
+  transform: none;
+  transition: none;
+  pointer-events: none;
+}
+
+.nav-logo a:hover {
+  transform: none;
+}
+
+.nav-logo a:hover .logo-svg {
+  transform: translateY(-1px) scale(1.04);
+}
+
+.nav-logo a:hover::after {
+  opacity: 0;
+  transform: none;
 }
 
 .nav-menu {
