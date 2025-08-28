@@ -177,7 +177,7 @@ resumeButtons.forEach((button) => {
 
       if (messageField) {
         messageField.value =
-          "Hi Raj,\n\nI would like to see your Resume.\n\nThanks.";
+          "Hi Raj,\n\nI would like to see your resume.\n\nThanks.";
         messageField.style.backgroundColor = "#1a2f4a";
         messageField.focus();
 
